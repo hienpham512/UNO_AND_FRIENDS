@@ -1,0 +1,29 @@
+.table1 {
+    height: 500px;
+    width: 450px;
+    background-image: url(../boder/boder_13.gif);
+    background-position: center;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 12px;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+h1{
+    background-color: red;
+    text-align : center;
+    border-radius: 12px;
+    font-size: 300%;
+}
+h2{
+    font-size: 300%;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+}
+body{
+    background-image: url(../boder/boder_16.gif);
+    background-position: center;
+    text-align: center;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}

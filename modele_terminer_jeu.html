@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_terminer_jeu.css"/>
+    <title>Page terminer</title>
+</head>
+<body>
+<table class="table1">
+    <tr>
+        <td>
+            <h1>LE MATCH EST TERMINÉ</h1>
+            <h1>{annonce}</h1>
+            <h2>Le joueur {winner} a gagné</h2>
+            {detail}
+            <a href="/req_identifier?pseudo={pseudo}&password={password}&credit={credit}&table={table}&pari={pari}" class="button">Retourner</a>
+            <a href="req_afficher_formulaire_placer_pari?pseudo={pseudo}&password={password}&credit={credit}&table={table}&pari={pari}" class="button">Rejouer</a>
+
+        </td>
+    </tr>
+</table>
+</body>
+</html>

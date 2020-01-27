@@ -1,0 +1,40 @@
+body {
+	text-align: center;
+	margin: 0 auto;
+	background-image: url(../boder/boder_7.gif);
+	background-position: center;
+	background-repeat: no-repeat ;
+	background-size: cover;
+}
+table{
+	margin: 0 auto;
+}
+a.button{
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #f4511e;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 14px;
+	padding: 20px;
+	width: 110px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	transform: scale(1);
+}
+a.button:nth-child(7n + 1) {
+	grid-column: 2 / span 2;
+}
+a.button:hover {
+	z-index: 2;
+	transform: scale(1.4);
+	background-color: green;
+}
+textarea{
+	height: 350px;
+	width: 700px;
+	background-color: antiquewhite;
+	font: caption;
+}

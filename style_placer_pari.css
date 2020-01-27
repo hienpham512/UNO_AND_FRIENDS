@@ -1,0 +1,84 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(boder/boder_11.gif);
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+table{
+    background-image: url(boder/boder_10.gif);
+    background-position: center;
+    margin: 0 auto;
+    height: 600px;
+    width: 450px;
+}
+a.button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transform: scale(1);
+}
+a.button:nth-child(7n + 1) {
+    grid-column: 2 / span 2;
+}
+a.button:hover {
+    z-index: 2;
+    transform: scale(1.4);
+    background-color: green;
+}
+.bouton1{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    width: 150px;
+    height: 60px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 30px;
+    transform: scale(1);
+}
+.bouton1:nth-child(7n + 1) {
+    grid-column: 2 / span 2;
+}
+.bouton1:hover {
+    z-index: 2;
+    transform: scale(1.4);
+    background-color: green;
+}
+h1{
+    background-color: red;
+    text-align : center;
+    border-radius: 12px;
+    top : unset;
+}
+input {
+    width: 175px;
+    height: 30px
+}
+label {
+    text-align: right;
+    font-size: 150%;
+    background-color: red;
+    border-radius: 12px;
+}
+p{
+    background-color: red;
+    text-align : center;
+    border-radius: 12px;
+    top : unset;
+}

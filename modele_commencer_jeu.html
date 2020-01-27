@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="style_en_jeu.css"/>
+		<meta http-equiv='refresh' content='2;/req_commencer_jeu?pseudo={pseudo}&password={password}&credit={credit}&pari={pari}&table={table}'/>
+	</head>
+	<title>Page en jeu</title>
+	<body>
+		{cartes}
+		<p1 class="corlorbutton">{colorButtons}</p1>
+		{error}
+		<a href="/req_identifier?pseudo={pseudo}&password={password}&credit={credit}&pari={pari}&table={table}" class="button">Sortir</a>
+	</body>
+</html>

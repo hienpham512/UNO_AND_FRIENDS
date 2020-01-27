@@ -1,0 +1,238 @@
+a.button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transform: scale(1);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+a.button:nth-child(7n + 1){
+    grid-column: 2 / span 2;
+}
+a.button:hover {
+    z-index: 2;
+    transform: scale(1.4);
+    background-color: green;
+}
+.buttonCard{
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    transition: all 0.5s;
+    cursor: pointer;
+    transform: scale(1);
+}
+a.buttonCard:nth-child(7n + 1){
+    grid-column: 2 / span 2;
+}
+a.buttonCard:hover {
+    z-index: 2;
+    transform: scale(1.4);
+}
+body{
+    text-align: center;
+    background-image: url(../boder/boder_13.gif);
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+.clock{
+    position: absolute;
+    right: 590px;
+    top: 130px;
+}
+.take_card{
+    position: absolute;
+    right: 380px;
+    top: 350px;
+}
+.takeCard{
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transform: scale(1);
+}
+.takeCard:nth-child(7n + 1){
+    grid-column: 2 / span 2;
+}
+.takeCard:hover{
+    z-index: 2;
+    transform: scale(1.4);
+}
+.playerCard{
+    margin: 8px;
+    position: absolute;
+    right: 550px;
+    top: 450px;
+}
+h1{
+    background-color: #FFFFFF;
+}
+h2{
+    color: crimson;
+}
+h3{
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 380px;
+    top: 480px;
+}
+a.jaune{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transform: scale(1);
+}
+a.jaune:nth-child(7n + 1){
+    grid-column: 2 / span 2;
+}
+a.jaune:hover {
+    z-index: 2;
+    transform: scale(1.4);
+    background-color: gold;
+}
+a.bleu{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transform: scale(1);
+}
+a.bleu:nth-child(7n + 1){
+    grid-column: 2 / span 2;
+}
+a.bleu:hover {
+    z-index: 2;
+    transform: scale(1.4);
+    background-color: blue;
+}
+a.vert{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transform: scale(1);
+}
+a.vert:nth-child(7n + 1){
+    grid-column: 2 / span 2;
+}
+a.vert:hover {
+    z-index: 2;
+    transform: scale(1.4);
+    background-color: green;
+}
+a.rouge{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transform: scale(1);
+}
+a.rouge:nth-child(7n + 1){
+    grid-column: 2 / span 2;
+}
+a.rouge:hover {
+    z-index: 2;
+    transform: scale(1.4);
+    background-color: red;
+}
+.bloque0{
+    position: absolute;
+    left: 150px;
+    top: 450px;
+}
+.bloque1{
+    position: absolute;
+    left: 20px;
+    top: 260px;
+}
+.bloque2{
+    position: absolute;
+    left: 150px;
+    top: 100px;
+}
+.bloque3{
+    position: absolute;
+    right: 550px;
+    top: 10px;
+}
+.bloque4{
+    position: absolute;
+    right: 150px;
+    top: 100px;
+}
+.bloque5{
+    position: absolute;
+    right: 20px;
+    top: 260px;
+}
+.bloque6{
+    position: absolute;
+    right: 150px;
+    top: 450px;
+}
+.cardObjet{
+    position: absolute;
+    right: 680px;
+    top: 190px;
+    background-color: red;
+}
+p {
+    position: absolute;
+    right: 590px;
+    top: 400px;
+    color: #FFFFFF;
+    background-color: red;
+}

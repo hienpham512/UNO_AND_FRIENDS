@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>page partienter uno</title>
+		<meta charset="UTF-8"/>
+		<meta http-equiv='refresh' content='2;url=/req_actualiser?pseudo={pseudo}&password={password}&credit={credit}&pari={pari}'/>
+		<link rel ='stylesheet' href='style_lobby.css'/>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>
+					<h1>Patienter svp!</h1>
+					<h3>Vous avez proposé un pari de {pari}</h3>
+					{liste}
+					{demarrer}
+					<a href= '/req_afficher_formulaire_placer_pari?pseudo={pseudo}&password={password}&credit={credit}&pari={pari}' class = "button">retourner</a>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <link rel="stylesheet" href="style_placer_pari.css"/>
+</head>
+<title>Page placer pari</title>
+<body>
+<table class="table1">
+    <tr>
+        <td>
+        <h1>Placer un pari</h1>
+        {erreur}
+        <form action="/req_rejoindre" method="GET">
+            <input type='hidden' name="pseudo" value="{pseudo}"/>
+            <input type='hidden' name="password" value="{password}"/>
+            <input type="hidden" name="credit" value="{credit}"/>
+            <label>Pari : </label>
+            <input type="text" name="pari" value=""/><br/>
+            <br>
+            <input type="submit" name="button" value="commencer" class="bouton1"/>
+        </form>
+        <a href='/req_identifier?pseudo={pseudo}&password={password}' class="button">retourner</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

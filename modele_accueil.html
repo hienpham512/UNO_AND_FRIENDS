@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="stylesheet" href="style_accueil.css"/>
+	</head>
+	<title>Page connection</title>
+	<body>
+		<table class="table1">
+			<tr>
+				<td>
+
+					<h1 class="titre1">CONNECTION</h1>
+	
+					{erreur}
+					<br>
+					<div class="bloque1">
+					<form action="/req_identifier" method="GET">
+						<label class="titre2a">Nom d'utilisateur : </label>
+						<input class="input1" type="text" name="pseudo" value="{pseudo}">
+						<br>
+						<label class="titre2b">Mot de pass : </label>
+						<input class="input2" type="password" name="password" value="">
+						<br><br>
+						<button class="bouton1" name="button1" value="Se connecter">Se connecter</button>
+					</form>
+					</div>
+					<div class="bloquer2">
+					<form action="/req_afficher_formulaire_inscription" method="GET">
+						<h3 class="titre3">Vous n'avez pas une compte?</h3><br>
+						<button class="bouton2" name="button2" value="creer">Créer compte</button>
+					<br>
+					
+					</form>
+					</div>
+				</td>
+			</tr>	
+		</table>
+	</body>
+</html>
