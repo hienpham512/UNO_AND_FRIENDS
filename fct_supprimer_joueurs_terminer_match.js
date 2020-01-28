@@ -1,6 +1,10 @@
 "use strict";
 const _ = require("lodash");
 const fs = require("fs");
+function _findNextPlayerIndex(table, player_index) {
+    return table.clockwise ? (player_index + 1) % table.pseudos.length
+        : (player_index - 1 + table.pseudos.length) % table.pseudos.length;
+}
 
 function _supprimer_joueur_rejouer_dans_listes_tables(table_index, pari,pseudo){
     if(!table_index || !pari){
@@ -27,6 +31,11 @@ function _supprimer_joueur_rejouer_dans_listes_tables(table_index, pari,pseudo){
         return;
     } else {
         table.pseudos.splice(table.pseudos.indexOf(player), 1);
+        if(table.next_player === pseudo){
+            let next_index = _findNextPlayerIndex(table, table.pseudos.indexOf(player));
+
+            table.next_player = table.pseudos[next_index].name;
+        }
     }
     contenu_tables = JSON.stringify(tables);
     fs.writeFileSync("tables_en_jeu.json", contenu_tables, "utf-8");
