@@ -90,9 +90,12 @@ function _analyzeCards({pari, pseudo, password, credit, table_index, marqueurs, 
     }
 
 
-
-    player.cards = player.cards.filter(card => !_.isEqual(card, chosen_card));
-
+    if(chosen_card.couleur === 'n' && chosen_card.chiffe !== '+2'){
+        console.log(player.cards.indexOf(chosen_card));
+        player.cards.splice((player.cards.indexOf(chosen_card)),1);
+    }else {
+        player.cards = player.cards.filter(card => !_.isEqual(card, chosen_card));
+    }
     if (chosen_card.couleur === 'n') {
         table.current_card = chosen_card;
 

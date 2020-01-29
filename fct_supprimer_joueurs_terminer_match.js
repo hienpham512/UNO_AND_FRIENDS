@@ -5,7 +5,6 @@ function _findNextPlayerIndex(table, player_index) {
     return table.clockwise ? (player_index + 1) % table.pseudos.length
         : (player_index - 1 + table.pseudos.length) % table.pseudos.length;
 }
-
 function _supprimer_joueur_rejouer_dans_listes_tables(table_index, pari,pseudo){
     if(!table_index || !pari){
         return;
@@ -31,7 +30,7 @@ function _supprimer_joueur_rejouer_dans_listes_tables(table_index, pari,pseudo){
         return;
     } else {
         table.pseudos.splice(table.pseudos.indexOf(player), 1);
-        if(table.next_player === pseudo){
+        if(table.next_player === pseudo && !table.winner){
             let next_index = _findNextPlayerIndex(table, table.pseudos.indexOf(player));
 
             table.next_player = table.pseudos[next_index].name;
